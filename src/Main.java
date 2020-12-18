@@ -21,6 +21,7 @@ public class Main {
         int t22 = 2;
         boolean ans = checkRange(t21, t22);
         System.out.println(ans);
+        System.out.println( isNegative(15));
     }
 
 
@@ -36,5 +37,12 @@ public class Main {
     static boolean checkRange (int a, int b){
         int c = a+b;
         return c<=20 && c>=10;
+    }
+
+    static String isNegative (int a){
+        if (a<0){
+            return "Negative";
+        }
+        return "Positive";
     }
 }
