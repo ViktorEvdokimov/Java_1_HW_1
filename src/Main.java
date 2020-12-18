@@ -21,7 +21,8 @@ public class Main {
         int t22 = 2;
         boolean ans = checkRange(t21, t22);
         System.out.println(ans);
-        System.out.println( isNegative(15));
+        System.out.println( isPositive(15));
+        System.out.println( isNegative(-15));
     }
 
 
@@ -39,10 +40,13 @@ public class Main {
         return c<=20 && c>=10;
     }
 
-    static String isNegative (int a){
+    static String isPositive (int a){
         if (a<0){
             return "Negative";
         }
         return "Positive";
+    }
+    static boolean isNegative(int a){
+        return a<0; //0 считаем положительным как в 5 задании, в 6м не оговорено
     }
 }
