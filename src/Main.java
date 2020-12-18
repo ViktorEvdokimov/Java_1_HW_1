@@ -17,6 +17,10 @@ public class Main {
         double result;
         result = calculationForTaskTwo(a, b, c, d);
         System.out.println(result);
+        int t21 = 15;
+        int t22 = 2;
+        boolean ans = checkRange(t21, t22);
+        System.out.println(ans);
     }
 
 
@@ -27,5 +31,10 @@ public class Main {
         }
         double result = a * (b + (c / d));
         return result;
+    }
+
+    static boolean checkRange (int a, int b){
+        int c = a+b;
+        return c<=20 && c>=10;
     }
 }
